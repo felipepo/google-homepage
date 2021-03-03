@@ -1,2 +1,3 @@
-Google homepage
-[Live demo](felipepo.github.io/google-homepage)
+Project to acommodate 
+- Google Homepage;
+- Google Search Results page;

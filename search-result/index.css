@@ -1,0 +1,264 @@
+body {
+    font-family: arial,sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    }
+
+header {
+    height: 100px;
+    display: grid;
+    padding: 25px 0px 0px 30px;
+    grid-template-columns: 140px 800px 900px;
+} 
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.searchbox {
+    width: 700px;
+    height: 40px;
+    border: 1px solid rgb(214, 206, 206);
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchbox input {
+    height: 90%;
+    width: 500px;
+    outline: none;
+    border: none;
+    margin-left: 15px;
+}
+
+.searchbox svg {
+    width: 16px;
+    height: 16px;
+    stroke: #80868b;
+    stroke-width: 2px;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.searchbox span {
+    color: white;
+    background-color: rgb(48, 45, 45);
+    font-size: 11px;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: -32px;
+    top: 70px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.searchbox > div:hover > span{
+    visibility: visible;
+}
+
+.searchbox span::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.navbar {
+    display: flex;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: 58px;
+}
+
+.navbar > div{
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 13px;
+}
+
+.tab-text {
+    margin-left: 5px;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+.selected-tab {
+    padding-bottom: 10px;
+    color: #1a73e8;
+    border-bottom-style: solid;
+    border-bottom-color: #1a73e8;
+    border-bottom-width: 3px;
+}
+
+.mag-glass {
+    width: 18px;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(3, 6px);
+    grid-template-rows: repeat(3, 6px);
+    padding-top: 10px;
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    background-color: rgb(128, 126, 126);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.header-right {
+    display: flex;
+    justify-self: end;
+}
+
+.login-button {
+    height: 35px;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 16px;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #2b7de9;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: 140px 700px 900px;
+    grid-template-areas: 
+    ". results extra";
+}
+
+.result-counter {
+    font-size: 14px;
+    color: #70757a;
+}
+
+.results-container {
+    grid-area: results;
+    padding-left: 15px;
+    height: 15px;
+}
+
+.results-container > div {
+    padding-top: 10px;
+}
+
+.site-path {
+    cursor: pointer;
+}
+
+.site-path:hover .site-title{
+    text-decoration: underline;
+}
+
+.main-domain {
+    font-size: 14px;
+}
+
+.breadcrumb{
+    font-size: 14px;
+    color: #70757a;
+}
+
+.site-title {
+    font-size: 20px;
+    color: rgb(11, 11, 136);
+}
+
+.site-description {
+    color: #4d5156;
+    margin-top: 8px;
+}
+
+.overview-info {
+    grid-area: extra;
+    margin-left: 25px;
+    margin-top: 60px;
+    width: 490px;
+}
+
+.image-collection {
+    display: flex;
+}
+
+.main-image  > img:first-child {
+    width: 170px;
+    height: 200px;
+}
+
+.smaller-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.smaller-image  > img:nth-child(n+1):nth-child(-n+2) {
+    width: 80px;
+    height: 100px;
+}
+
+.smaller-image  > img:nth-child(3) {
+    width: 160px;
+    height: 100px;
+}
+
+.smaller-image  > img:nth-child(n+4):nth-child(-n+5) {
+    width: 130px;
+    height: 100px;
+}
+
+.smaller-image  > img:nth-child(6) {
+    width: 60px;
+    height: 100px;
+}
+
+.smaller-image > span {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    font-size: 13px;
+    padding: 8px;
+    position: relative;
+    left: calc(100% - 97px);
+    bottom: 31px;
+}
